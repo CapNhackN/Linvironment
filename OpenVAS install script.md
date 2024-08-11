@@ -1,7 +1,7 @@
 Use Cases:
 Installs Greenbone Network's OpenVAS vulnerability scanner.
 
-```
+```bash
 #!/bin/bash
 
 # This script will install and configure the OpenVAS vulnerability scanner from GreenBone networks on Kali Linux.
