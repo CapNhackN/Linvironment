@@ -76,13 +76,13 @@ BLUE "Installing Sublime Text..." # according to https://www.sublimetext.com/doc
 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 
-sudo apt-get install -y apt-transport-https
+sudo apt install -y apt-transport-https
 
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
-sudo apt-get update
+sudo apt update
 
-sudo apt-get install -y sublime-text
+sudo apt install -y sublime-text
 
   
 
@@ -116,21 +116,21 @@ BLUE "Installing SimpleScreenRecorder..."
 
 echo "" | sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
 
-sudo apt-get update
+sudo apt update
 
-sudo apt-get install -y simplescreenrecorder
+sudo apt install -y simplescreenrecorder
 
   
 
 BLUE "Installing task..."
 
-sudo apt-get install -y taskwarrior
+sudo apt install -y taskwarrior
 
   
 
 BLUE "Installing pip..."
 
-sudo apt-get install -y python-pip
+sudo apt install -y python-pip
 
   
 
@@ -142,24 +142,24 @@ rmdir ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Public ~/Templates 
 
 BLUE "Installing guake..."
 
-sudo apt-get install -y guake
+sudo apt install -y guake
 
   
 
 BLUE "Installing openvpn..."
 
-sudo apt-get install -y openvpn
+sudo apt install -y openvpn
  
 
 BLUE "Installing nmap..."
 
-sudo apt-get install -y nmap
+sudo apt install -y nmap
 
   
 
 BLUE "Installing docker..."
 
-sudo apt-get install -y docker.io
+sudo apt install -y docker.io
 
 sudo groupadd docker
 
@@ -169,37 +169,37 @@ sudo usermod -aG docker `logname`
 
 BLUE "Installing curl..."
 
-sudo apt-get install -y curl
+sudo apt install -y curl
 
   
 
 BLUE "Installing pinta..."
 
-sudo apt-get install -y pinta
+sudo apt install -y pinta
 
   
 
 BLUE "Installing exiftool..."
 
-sudo apt-get install -y exiftool
+sudo apt install -y exiftool
 
   
 
 BLUE "Installing Python PIL..."
 
-sudo apt-get install -y python-pil
+sudo apt install -y python-pil
 
   
 
 BLUE "Installing sqlitebrowser..."
 
-sudo apt-get install -y sqlitebrowser
+sudo apt install -y sqlitebrowser
 
   
 
 BLUE "Installing Wireshark..."
 
-sudo apt-get install -y wireshark
+sudo apt install -y wireshark
 
   
 
@@ -427,9 +427,9 @@ BLUE "Installing Oracle Java 8..."
 
 echo "" | sudo add-apt-repository ppa:webupd8team/java
 
-sudo apt-get update
+sudo apt update
 
-sudo apt-get install -y oracle-java8-installer
+sudo apt install -y oracle-java8-installer
 
   
 
@@ -590,8 +590,6 @@ cp /usr/share/powershell-empire/empire/server/data/module_source/situational_awa
 
 cp /usr/lib/bloodhound/resources/app/Collectors/SharpHound.ps1 .
 ```
-
-
 
 
 
