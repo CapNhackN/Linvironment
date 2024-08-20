@@ -525,37 +525,57 @@ BLUE "Installing Python scapy..."
 
 sudo pip install scapy
 
-  
+
+
+BLUE "Installing and setting default shell to zsh..."
+
+sudo apt install zsh && chsh -s $(which zsh)  
+
+
 
 BLUE "Installing the thing that 7z2john.pl needs..."
 
 sudo apt install libcompress-raw-lzma-perl
 
+
+
 BLUE "Installing Bloodhound..."
 
 sudo apt install bloodhound
+
+
 
 BLUE "Installing dos2unix..."
 
 sudo apt install libcompress-raw-lzma-perl
 
+
+
 BLUE "Installing Seclists..."
 
 sudo apt install seclists
+
+
 
 BLUE "Installing chisel..."
 
 sudo apt install chisel
 
+
+
 BLUE "Install sshuttle..."
 
 sudo apt install sshuttle
+
+
 
 BLUE "Adding enhanced matrix viewing application..."
 
 sudo apt install cmatrix
 
-BLUE "Generating TOOLS folder for ya..."
+
+
+BLUE "Generating TOOLS folder..."
 
 # Check if the TOOLS directory exists
 if [ ! -d "TOOLS" ]; then
@@ -575,7 +595,10 @@ curl -O https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.9.1
 # curl -O <tool5_download_link>
 # curl -O <tool6_download_link>
 cd ../
-BLUE "Now for tha SCRIPTS..."
+
+
+
+BLUE "Now for SCRIPTS..."
 
 if [ ! -d "SCRIPTS" ]; then
     # Create the TOOLS directory if it doesn't exist
