@@ -584,9 +584,9 @@ if [ ! -d "TOOLS" ]; then
 fi
 
 # Change to the TOOLS directory
-cd TOOLS
-cp /usr/share/windows-resources/mimikatz/Win32/mimikatz.exe mimikatz32.exe
-cp /usr/share/windows-resources/mimikatz/x64/mimikatz.exe mimikatz64.exe
+cd ~/TOOLS
+# cp /usr/share/windows-resources/mimikatz/Win32/mimikatz.exe mimikatz32.exe .
+cp /usr/share/windows-resources/mimikatz/x64/mimikatz.exe mimikatz64.exe .
 # Download tools using curl
 curl -O https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.9.1_windows_amd64.gz
 # curl -O <tool2_download_link>
@@ -600,8 +600,8 @@ cd ../
 
 BLUE "Now for SCRIPTS..."
 
+# Create the TOOLS directory if it doesn't exist
 if [ ! -d "SCRIPTS" ]; then
-    # Create the TOOLS directory if it doesn't exist
     mkdir SCRIPTS
 fi
 
