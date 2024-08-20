@@ -529,7 +529,7 @@ sudo pip install scapy
 
 BLUE "Installing and setting default shell to zsh..."
 
-sudo apt install zsh && chsh -s $(which zsh)  
+sudo apt install -y zsh && chsh -s $(which zsh)  
 
 
 
